@@ -49,4 +49,10 @@ import java_cup.runtime.*;
 "volatile" { System.out.println("Declara una variable que puede ser modificada por hardware"); }
 "while" { System.out.println("Especifica un bucle while"); }
 
+"()" { System.out.println(""); }
+"[]" { System.out.println(""); }
+"/" { System.out.println(""); }
+"*" { System.out.println(""); }
+"**" { System.out.println(""); }
+
 . { System.out.println("Simbolo no reconocido"); }
