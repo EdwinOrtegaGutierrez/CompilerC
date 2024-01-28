@@ -12,7 +12,7 @@ import java_cup.sym;
 public class App {
     public static void main(String[] args) throws Exception {
         try {
-            Reader lector = new BufferedReader(new FileReader("test.txt"));
+            Reader lector = new BufferedReader(new FileReader("C:\\Users\\edwin\\OneDrive\\Escritorio\\CompilerC\\src\\lexico\\test.txt"));
             Scanner lexico = new Scanner(lector);
             String resultado = "";
             while (true) {
@@ -24,9 +24,9 @@ public class App {
                 }
             }
         } catch (FileNotFoundException ex) {
-            
+            System.out.println(ex);
         } catch (IOException ex) {
-            
+            System.out.println(ex);
         }
     }
 }
