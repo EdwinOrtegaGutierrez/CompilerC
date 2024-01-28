@@ -1,0 +1,5 @@
+doble
+do
+default
+short
+switch

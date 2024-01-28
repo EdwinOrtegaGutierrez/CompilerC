@@ -7,6 +7,7 @@
 package lexico;
 
 import java_cup.runtime.*;
+import java_cup.sym;
 
 
 /**
@@ -14,7 +15,7 @@ import java_cup.runtime.*;
  * <a href="http://www.jflex.de/">JFlex</a> 1.6.1
  * from the specification file <tt>C:/Users/edwin/OneDrive/Escritorio/CompilerC/src/lexico/c_lexer.flex</tt>
  */
-class Scanner implements java_cup.runtime.Scanner {
+public class Scanner implements java_cup.runtime.Scanner {
 
   /** This character denotes the end of file */
   public static final int YYEOF = -1;

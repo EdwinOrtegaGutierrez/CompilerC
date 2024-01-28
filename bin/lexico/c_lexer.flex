@@ -1,7 +1,5 @@
 /*
-    ALVAREZ VELAZQUEZ EDSON ALI
     ORTEGA GUTIERREZ EDWIN OMAR
-    SANCHEZ REYES DANIA GUADALUPE
 */
 
 package lexico;
@@ -57,4 +55,16 @@ import java_cup.runtime.*;
 "*" { System.out.println(""); }
 "**" { System.out.println(""); }
 
-. { System.out.println("Simbolo no reconocido"); }
+/* EXPRESIONES */
+
+"\/\*(?:.|[\r\n])*?\*\/" { System.out.println("Comentarios multi: " + yytext()); }
+"\/\/[^\r\n]*" { System.out.println("Comentarios unilinea: " + yytext()); }
+"[ \n\t\r]+" { System.out.println("Espacios: " + yytext()); }
+"\"(?:[^\"]|\\.)*\"" { System.out.println("Cadenas: " + yytext()); }
+"\"(?:[^\"\\]|\\.)\"" { System.out.println("Caracteres: " + yytext()); }
+"^-?\d+$" { System.out.println("Enteros: " + yytext()); }
+"^-?\d*\.\d+$" { System.out.println("Decimales: " + yytext()); }
+"(true|false)" { System.out.println("Boleanos: " + yytext()); }
+"[a-zA-Z_][a-zA-Z0-9_]*" { System.out.println("Identificadores: " + yytext()); }
+   
+. { System.out.println("Simbolo no reconocido: " + yytext()); }
