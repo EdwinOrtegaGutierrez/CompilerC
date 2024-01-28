@@ -1,5 +1,9 @@
 /*
     ORTEGA GUTIERREZ EDWIN OMAR
+<<<<<<< HEAD
+=======
+    SANCHEZ REYES DANIA
+>>>>>>> 00a1b02a93402836a4380703dcc836f6ac30c40f
 */
 
 package lexico;
@@ -49,6 +53,7 @@ import java_cup.runtime.*;
 "volatile" { System.out.println("Declara una variable que puede ser modificada por hardware"); }
 "while" { System.out.println("Especifica un bucle while"); }
 
+<<<<<<< HEAD
 "()" { System.out.println(""); }
 "[]" { System.out.println(""); }
 "/" { System.out.println(""); }
@@ -68,3 +73,6 @@ import java_cup.runtime.*;
 "[a-zA-Z_][a-zA-Z0-9_]*" { System.out.println("Identificadores: " + yytext()); }
    
 . { System.out.println("Simbolo no reconocido: " + yytext()); }
+=======
+. { System.out.println("Simbolo no reconocido"); }
+>>>>>>> 00a1b02a93402836a4380703dcc836f6ac30c40f

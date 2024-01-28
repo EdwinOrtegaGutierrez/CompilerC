@@ -1,5 +1,7 @@
 /*
+    ALVAREZ VELAZQUEZ EDOSN ALI
     ORTEGA GUTIERREZ EDWIN OMAR
+    SANCHEZ REYES DANIA GUADALUPE
 */
 
 package lexico;
@@ -49,11 +51,42 @@ import java_cup.runtime.*;
 "volatile" { System.out.println("Declara una variable que puede ser modificada por hardware"); }
 "while" { System.out.println("Especifica un bucle while"); }
 
-"()" { System.out.println(""); }
-"[]" { System.out.println(""); }
-"/" { System.out.println(""); }
-"*" { System.out.println(""); }
-"**" { System.out.println(""); }
+/* Operadores */ 
+
+"+=" { System.out.println(" Suma y asignación "); }
+"++" { System.out.println(" Incremento "); }
+"-=" { System.out.println(" Resta y asignación "); }
+"/=" { System.out.println(" División y asignación "); }
+"%=" { System.out.println(" Módulo y asignación "); }
+"--" { System.out.println(" Decremento "); }
+"<=" { System.out.println(" Menor o igual que "); }
+">=" { System.out.println(" Mayor que o igual que "); }
+"==" { System.out.println(" Igual que "); }
+"!=" { System.out.println(" Diferente que / No igual que "); }
+"<=>" { System.out.println(" Comparación a tres sentidos "); }
+"&&" { System.out.println(" Y lógico (AND) "); }
+"||" { System.out.println(" O lógico (OR) "); }
+"<<" { System.out.println(" Desplazamiento a la izquierda "); }
+"<<=" { System.out.println(" Asignación con desplazamiento a la izquierda "); }
+">>" { System.out.println(" Desplazamiento a la derecha "); }
+">>=" { System.out.println(" Asignación con desplazamiento a la derecha "); }
+"&=" { System.out.println(" Asignación con AND binario "); }
+"^=" { System.out.println(" Asignación con XOR binario "); }
+"()" { System.out.println(" Llamada a función "); }
+"/" { System.out.println(" División "); }
+"%" { System.out.println(" Módulo "); }
+"|" { System.out.println(" OR binario "); }
+"=" { System.out.println(" Asignación básica "); }
+"&" { System.out.println(" AND binario "); }
+"*" { System.out.println(" Multiplicación "); }
+"*=" { System.out.println(" Multiplicación y asignación "); }
+"<" { System.out.println(" Menor que "); }
+">" { System.out.println(" Mayor que "); }
+"!" { System.out.println(" Negación lógica (NOT) "); }
+"-" { System.out.println(" Resta "); }
+"^" { System.out.println(" XOR binario "); }
+"~" { System.out.println(" Complemento a uno "); }
+"+" { System.out.println(" Suma "); }
 
 /* EXPRESIONES */
 
