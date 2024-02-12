@@ -182,13 +182,16 @@ import java_cup.*;
 "&=" { System.out.println(" Asignación con AND binario "); }
 "^=" { System.out.println(" Asignación con XOR binario "); }
 "()" { System.out.println(" Llamada a función "); }
+"*=" { System.out.println(" Multiplicación y asignación "); }
 "/" { System.out.println(" Division "); }
 "%" { System.out.println(" Módulo "); }
 "|" { System.out.println(" OR binario "); }
-"=" { System.out.println(" Asignación básica "); }
 "&" { System.out.println(" AND binario "); }
 "*" { System.out.println(" Multiplicacion "); }
-"*=" { System.out.println(" Multiplicación y asignación "); }
+"=" { 
+    System.out.println(" Asignación básica "); 
+    return symbol(sym.IGUAL);
+}
 "<" { System.out.println(" Menor que "); }
 ">" { System.out.println(" Mayor que "); }
 "!" { System.out.println(" Negación lógica (NOT) "); }
@@ -196,12 +199,19 @@ import java_cup.*;
 "^" { System.out.println(" XOR binario "); }
 "~" { System.out.println(" Complemento a uno "); }
 "+" { System.out.println(" Suma "); }
+";" { 
+    System.out.println("Punto y coma"); 
+    return symbol(sym.PUNTO_COMA);
+}
 
 /* EXPRESIONES */
 [\r\n] { /* Acciones específicas para salto de línea */ }
 "\\/\\*(?:.|[\\r\\n])*?\\*\\/" { System.out.println("Comentarios multi: " + yytext()); }
 "\\/\\/[^\r\n]*" { System.out.println("Comentarios unilinea: " + yytext()); }
-"[ \\n\\t\\r]+" { System.out.println("Espacios: " + yytext()); }
+"[ \\n\\t\\r]+" { 
+    System.out.println("Espacios: " + yytext()); 
+    return symbol(sym.ENTEROS);
+}
 "\"(?:[^\"]|\\.)*\"" { System.out.println("Cadenas: " + yytext()); }
 "\'(?:[^\']|\\.)*\'" { System.out.println("Caracteres: " + yytext()); }
 "^-?\\d+$" { System.out.println("Enteros: " + yytext()); }
