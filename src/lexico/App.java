@@ -8,25 +8,18 @@ import java.io.Reader;
 import java_cup.runtime.Symbol;
 import java_cup.sym;
 
-
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         try {
             Reader lector = new BufferedReader(new FileReader("C:\\Users\\edwin\\OneDrive\\Escritorio\\CompilerC\\src\\lexico\\test.txt"));
             Scanner lexico = new Scanner(lector);
-            String resultado = "";
+
             while (true) {
                 Symbol token = lexico.next_token();
-                if (token.sym == sym.EOF) {
-                    resultado += "FIN";
-                    System.out.println(resultado);
+
+                if (token.sym == sym.EOF) 
                     break;
-                }
             }
-        } catch (FileNotFoundException ex) {
-            System.out.println(ex);
-        } catch (IOException ex) {
-            System.out.println(ex);
-        }
+        }  catch (FileNotFoundException ex) {} catch (IOException ex) {}
     }
 }

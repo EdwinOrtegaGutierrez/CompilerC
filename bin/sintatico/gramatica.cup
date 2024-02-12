@@ -1,0 +1,23 @@
+package sintatico;
+
+import java_cup.runtime.*;
+import java_cup.sym;
+
+/* SIMBOLOS TERMINALES */
+/* TODOS LOS SIMBOLOS DEL .FLEX */
+terminal AUTO, BREAK, CASE, CHAR, CONST, CONTINUE, DEFAULT, DO, INCLUDE, CLASS;
+terminal DOUBLE, ELSE, ENUM, EXTERN, FLOAT, FOR, GOTO, IF, INT, LOGIN, REGISTER; 
+terminal RETURN, SHORT, SIGNED, SIZEOF, STATIC, STRUCT, SWITCH, TYPEDEF, UNION;
+terminal UNSIGNED, VOID, VOLATILE, WHILE;
+
+/* SIMBOLOS NO TERMINALES */
+/* PALABRAS INTERMEDIAS */
+non terminal declarations, dec_includes;
+
+/* REGLAS GRAMATICALES */
+start with declarations;
+
+/* int::=dec_enteros | dec_ints; */
+declarations::=dec_includes;
+
+dec_includes::= INCLUDE CLASS;
