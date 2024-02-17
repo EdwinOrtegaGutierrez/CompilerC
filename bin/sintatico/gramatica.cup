@@ -10,7 +10,8 @@ terminal AUTO, BREAK, CASE, CHAR, CONST, CONTINUE, DEFAULT, DO, INCLUDE, CLASS;
 terminal DOUBLE, ELSE, ENUM, EXTERN, FLOAT, FOR, GOTO, IF, INT, LOGIN, REGISTER; 
 terminal RETURN, SHORT, SIGNED, SIZEOF, STATIC, STRUCT, SWITCH, TYPEDEF, UNION;
 terminal UNSIGNED, VOID, VOLATILE, WHILE;
-
+terminal INCLUDE, LIB;
+terminal VARS, BOOLS, FLOATS, INTS, CHARS, STRINGS, INTS, UNILINEA, MULTILINEA;
     /* SIMBOLOS*/
 terminal IGUAL, ENTEROS, PUNTO_COMA;
 /* SIMBOLOS NO TERMINALES */
@@ -19,6 +20,10 @@ non terminal declarations, dec_includes;
 
 /* REGLAS GRAMATICALES */
 start with declarations;
+
+declarations::= dec_lib;
+
+dec_lib::= INCLUDE LIB;
 
 enteros::= dec_enteros;
 
