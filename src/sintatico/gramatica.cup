@@ -28,3 +28,5 @@ dec_lib::= INCLUDE LIB;
 enteros::= dec_enteros;
 
 dec_enteros::= INT IGUAL ENTEROS PUNTO_COMA;
+
+struct_declaration::= STRUCT IDENTIFICADORES '{' declarations '}';
