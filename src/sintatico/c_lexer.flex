@@ -303,6 +303,33 @@ import java_cup.*;
     System.out.println("Punto y coma"); 
     return symbol(sym.PUNTO_COMA);
 }
+<YYINITIAL> "{" { 
+    System.out.println("Llave izquierda"); 
+    return symbol(sym.BRACKET_LEFT);
+}
+<YYINITIAL> "}" { 
+    System.out.println("Llave derecha"); 
+    return symbol(sym.BRACKET_RIGHT);
+}
+<YYINITIAL> "(" { 
+    System.out.println("Parentesis izquierdo"); 
+    return symbol(sym.PARENTHESES_LEFT);
+}
+<YYINITIAL> ")" { 
+    System.out.println("Parentesis derecho"); 
+    return symbol(sym.PARENTHESES_RIGHT);
+}
+
+/* FUNCIONES */
+<YYINITIAL> "main()" { 
+    System.out.println("Metodo main"); 
+    return symbol(sym.MAIN);
+}
+
+<YYINITIAL> "printf" { 
+    System.out.println("Metodo print"); 
+    return symbol(sym.PRINTF);
+}
 
 /* EXPRESIONES */
 [\r\n] { /* Acciones específicas para salto de línea */ }

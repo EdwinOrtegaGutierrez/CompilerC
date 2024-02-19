@@ -12,19 +12,28 @@ terminal RETURN, SHORT, SIGNED, SIZEOF, STATIC, STRUCT, SWITCH, TYPEDEF, UNION;
 terminal UNSIGNED, VOID, VOLATILE, WHILE;
 terminal INCLUDE, LIB;
 terminal VARS, BOOLS, FLOATS, INTS, CHARS, STRINGS, INTS, UNILINEA, MULTILINEA;
+terminal MAIN, BRACKET_LEFT, BRACKET_RIGHT, PRINTF, PARENTHESES_LEFT, PARENTHESES_RIGHT;
     /* SIMBOLOS*/
 terminal IGUAL, ENTEROS, PUNTO_COMA;
 /* SIMBOLOS NO TERMINALES */
 /* PALABRAS INTERMEDIAS */
-non terminal declarations, dec_includes;
+non terminal declarations, dec_lib, dec_main, data_main, PRINTFS, RETURNS;
 
 /* REGLAS GRAMATICALES */
 start with declarations;
 
-declarations::= dec_lib;
+declarations::= dec_lib dec_main;
 
 dec_lib::= INCLUDE LIB;
 
-enteros::= dec_enteros;
+dec_main::= INT MAIN BRACKET_LEFT data_main BRACKET_RIGHT;
 
-dec_enteros::= INT IGUAL ENTEROS PUNTO_COMA;
+data_main::= UNILINEA || MULTILINEA || PRINTFS || RETURNS;
+
+PRINTFS::= PRINTF PARENTHESES_LEFT STRINGS PARENTHESES_RIGHT PUNTO_COMA;
+
+RETURNS::= RETURN INT PUNTO_COMA;
+
+// enteros::= dec_enteros;
+
+// dec_enteros::= INT IGUAL ENTEROS PUNTO_COMA;
