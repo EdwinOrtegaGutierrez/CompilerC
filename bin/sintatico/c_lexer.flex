@@ -26,7 +26,7 @@ import java_cup.*;
     private Symbol symbol(int type, Object value){
         return new Symbol(type, yyline, yycolumn, value);
     }
-}%
+%}
 
 %%
 
