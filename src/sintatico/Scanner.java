@@ -11,6 +11,7 @@
 package sintatico;
 
 import java_cup.*;
+import java_cup.runtime.*;
 
 
 /**
@@ -788,45 +789,47 @@ class Scanner implements java_cup.runtime.Scanner {
           case 89: break;
           case 4: 
             { System.out.println(" Resta "); 
-    return symbol(sym.);
+    return symbol(sym.RESTA);
             }
           case 90: break;
           case 5: 
             { System.out.println(" Division "); 
-    return symbol(sym.);
+    return symbol(sym.DIVISION);
             }
           case 91: break;
           case 6: 
             { System.out.println(" Módulo "); 
-    return symbol(sym.);
+    return symbol(sym.MODULO);
             }
           case 92: break;
           case 7: 
             { System.out.println(" Menor que "); 
-    return symbol(sym.);
+    return symbol(sym.MENOR_QUE);
             }
           case 93: break;
           case 8: 
             { System.out.println(" Mayor que "); 
-    return symbol(sym.);
+    return symbol(sym.MAYOR_QUE);
             }
           case 94: break;
           case 9: 
-            { System.out.println(" Negación lógica (NOT) "); return symbol(sym.);
+            { System.out.println(" Negación lógica (NOT) "); 
+    return symbol(sym.NEGACION_LOGICA);
             }
           case 95: break;
           case 10: 
             { System.out.println(" AND binario ");
-    return symbol(sym.);
+    return symbol(sym.AND_BINARIO);
             }
           case 96: break;
           case 11: 
             { System.out.println(" OR binario "); 
-    return symbol(sym.);
+    return symbol(sym.OR_BINARIO);
             }
           case 97: break;
           case 12: 
-            { System.out.println(" XOR binario "); return symbol(sym.);
+            { System.out.println(" XOR binario "); 
+    return symbol(sym.XOR_BINARIO);
             }
           case 98: break;
           case 13: 
@@ -841,12 +844,12 @@ class Scanner implements java_cup.runtime.Scanner {
           case 100: break;
           case 15: 
             { System.out.println(" Multiplicacion "); 
-    return symbol(sym.);
+    return symbol(sym.MULTIPLICACION);
             }
           case 101: break;
           case 16: 
             { System.out.println(" Complemento a uno "); 
-    return symbol(sym.);
+    return symbol(sym.COMPLEMENTO_A_UNO);
             }
           case 102: break;
           case 17: 
@@ -880,91 +883,92 @@ class Scanner implements java_cup.runtime.Scanner {
           case 108: break;
           case 23: 
             { System.out.println(" Incremento "); 
-    return symbol(sym.);
+    return symbol(sym.INCREMENTO);
             }
           case 109: break;
           case 24: 
             { System.out.println(" Suma y asignacion "); 
-    return symbol(sym.);
+    return symbol(sym.SUMA_ASIGNACION);
             }
           case 110: break;
           case 25: 
             { System.out.println(" Igual que "); 
-    return symbol(sym.);
+    return symbol(sym.IGUAL_QUE);
             }
           case 111: break;
           case 26: 
             { System.out.println(" Resta y asignación "); 
-    return symbol(sym.);
+    return symbol(sym.RESTA_ASIGNACION);
             }
           case 112: break;
           case 27: 
             { System.out.println(" Decremento "); 
-    return symbol(sym.);
+    return symbol(sym.DECREMENTO);
             }
           case 113: break;
           case 28: 
             { System.out.println(" División y asignación "); 
-    return symbol(sym.);
+    return symbol(sym.DIVISION_ASIGNACION);
             }
           case 114: break;
           case 29: 
             { System.out.println(" Módulo y asignación "); 
-    return symbol(sym.);
+    return symbol(sym.MODULO_Y_ASIGNACION);
             }
           case 115: break;
           case 30: 
             { System.out.println(" Menor o igual que "); 
-    return symbol(sym.);
+    return symbol(sym.MENOR_O_IGUAL_QUE);
             }
           case 116: break;
           case 31: 
             { System.out.println(" Desplazamiento a la izquierda "); 
-    return symbol(sym.);
+    return symbol(sym.DESPLAZAMIENTO_IZQUIERDA);
             }
           case 117: break;
           case 32: 
             { System.out.println(" Mayor que o igual que "); 
-    return symbol(sym.);
+    return symbol(sym.MAYOR_O_IGUAL_QUE);
             }
           case 118: break;
           case 33: 
             { System.out.println(" Desplazamiento a la derecha "); 
-    return symbol(sym.);
+    return symbol(sym.DESPLAZAMIENTO_DERECHA);
             }
           case 119: break;
           case 34: 
             { System.out.println(" Diferente que / No igual que "); 
-    return symbol(sym.);
+    return symbol(sym.DIFERENTE_QUE);
             }
           case 120: break;
           case 35: 
             { System.out.println(" Asignación con AND binario "); 
-    return symbol(sym.);
+    return symbol(sym.ASIGNACION_AND);
             }
           case 121: break;
           case 36: 
             { System.out.println(" Y lógico (AND) "); 
-    return symbol(sym.);
+    return symbol(sym.AND);
             }
           case 122: break;
           case 37: 
             { System.out.println(" O lógico (OR) ");
-    return symbol(sym.);
+    return symbol(sym.OR);
             }
           case 123: break;
           case 38: 
             { System.out.println(" Asignación con XOR binario "); 
-    return symbol(sym.);
+    return symbol(sym.ASIGNACION_XOR);
             }
           case 124: break;
           case 39: 
-            { System.out.println(" Llamada a función "); return symbol(sym.);
+            { System.out.println(" Llamada a función "); 
+    return symbol(sym.LLAMADA_A_FUNCION);
             }
           case 125: break;
           case 40: 
             { System.out.println(" Multiplicación y asignación "); 
-    return symbol(sym.);
+    return symbol(sym.MULTIPLIACION_Y_ASIGNACION);
             }
           case 126: break;
           case 41: 
@@ -979,17 +983,17 @@ class Scanner implements java_cup.runtime.Scanner {
           case 128: break;
           case 43: 
             { System.out.println(" Comparación a tres sentidos "); 
-    return symbol(sym.);
+    return symbol(sym.COMPARACION_TRES_SENTIDOS);
             }
           case 129: break;
           case 44: 
             { System.out.println(" Asignación con desplazamiento a la izquierda "); 
-    return symbol(sym.);
+    return symbol(sym.ASIGNACION_DESPLAZAMIENTO_IZQUIERDA);
             }
           case 130: break;
           case 45: 
             { System.out.println(" Asignación con desplazamiento a la derecha "); 
-    return symbol(sym.);
+    return symbol(sym.ASIGNACION_DESPLAZAMIENTO_DERECHA);
             }
           case 131: break;
           case 46: 
@@ -1124,7 +1128,7 @@ class Scanner implements java_cup.runtime.Scanner {
           case 157: break;
           case 72: 
             { System.out.println("Enteros: " + yytext()); 
-    return symbol(sym.INTS)
+    return symbol(sym.INTS);
             }
           case 158: break;
           case 73: 
@@ -1158,11 +1162,11 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 164: break;
           case 79: 
-            { System.out.println("Comentarios unilinea: " + yytext());
+            { /* Comentarios unilinea */
             }
           case 165: break;
           case 80: 
-            { System.out.println("Espacios: " + yytext());
+            { /*Espacios*/
             }
           case 166: break;
           case 81: 
@@ -1186,7 +1190,7 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 170: break;
           case 85: 
-            { System.out.println("Comentarios multi: " + yytext());
+            { /*Comentarios multi */
             }
           case 171: break;
           case 86: 
