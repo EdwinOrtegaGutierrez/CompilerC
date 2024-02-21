@@ -172,15 +172,15 @@ import java_cup.*;
 }
 <YYINITIAL> "++" { 
     System.out.println(" Incremento "); 
-    return symbol(sym.);
+    return symbol(sym.INCREMENTO);
 }
 <YYINITIAL> "-=" { 
     System.out.println(" Resta y asignación "); 
-    return symbol(sym.);
+    return symbol(sym.RESTA_ASIGNACION);
 }
 <YYINITIAL> "/=" { 
     System.out.println(" División y asignación "); 
-    return symbol(sym.);
+    return symbol(sym.DIVISION_ASIGNACION);
 }
 <YYINITIAL> "%=" { 
     System.out.println(" Módulo y asignación "); 
