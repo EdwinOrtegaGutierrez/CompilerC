@@ -184,90 +184,91 @@ import java_cup.*;
 }
 <YYINITIAL> "%=" { 
     System.out.println(" Módulo y asignación "); 
-    return symbol(sym.);
+    return symbol(sym.MODULO_Y_ASIGNACION);
 }
 <YYINITIAL> "--" { 
     System.out.println(" Decremento "); 
-    return symbol(sym.);
+    return symbol(sym.DECREMENTO);
 }
 <YYINITIAL> "<=" { 
     System.out.println(" Menor o igual que "); 
-    return symbol(sym.);
+    return symbol(sym.MENOR_O_IGUAL_QUE);
 }
 <YYINITIAL> ">=" { 
     System.out.println(" Mayor que o igual que "); 
-    return symbol(sym.);
+    return symbol(sym.MAYOR_O_IGUAL_QUE);
 }
 <YYINITIAL> "==" { 
     System.out.println(" Igual que "); 
-    return symbol(sym.);
+    return symbol(sym.IGUAL_QUE);
 }
 <YYINITIAL> "!=" { 
     System.out.println(" Diferente que / No igual que "); 
-    return symbol(sym.);
+    return symbol(sym.DIFERENTE_QUE);
 }
 <YYINITIAL> "<=>" { 
     System.out.println(" Comparación a tres sentidos "); 
-    return symbol(sym.);
+    return symbol(sym.COMPARACION_TRES_SENTIDOS);
 }
 <YYINITIAL> "&&" { 
     System.out.println(" Y lógico (AND) "); 
-    return symbol(sym.);
+    return symbol(sym.AND);
 }
 <YYINITIAL> "||" { 
     System.out.println(" O lógico (OR) ");
-    return symbol(sym.);
+    return symbol(sym.OR);
 }
 <YYINITIAL> "<<" { 
     System.out.println(" Desplazamiento a la izquierda "); 
-    return symbol(sym.);
+    return symbol(sym.DESPLAZAMIENTO_IZQUIERDA);
 }
 <YYINITIAL> "<<=" { 
     System.out.println(" Asignación con desplazamiento a la izquierda "); 
-    return symbol(sym.);
+    return symbol(sym.ASIGNACION_DESPLAZAMIENTO_IZQUIERDA);
 }
 <YYINITIAL> ">>" { 
     System.out.println(" Desplazamiento a la derecha "); 
-    return symbol(sym.);
+    return symbol(sym.DESPLAZAMIENTO_DERECHA);
 }
 <YYINITIAL> ">>=" { 
     System.out.println(" Asignación con desplazamiento a la derecha "); 
-    return symbol(sym.);
+    return symbol(sym.ASIGNACION_DESPLAZAMIENTO_DERECHA);
 }
 <YYINITIAL> "&=" { 
     System.out.println(" Asignación con AND binario "); 
-    return symbol(sym.);
+    return symbol(sym.ASIGNACION_AND);
 }
 <YYINITIAL> "^=" { 
     System.out.println(" Asignación con XOR binario "); 
-    return symbol(sym.);
+    return symbol(sym.ASIGNACION_XOR);
 }
 <YYINITIAL> "()" { 
-    System.out.println(" Llamada a función "); return symbol(sym.);
+    System.out.println(" Llamada a función "); 
+    return symbol(sym.LLAMADA_A_FUNCION);
 }
 <YYINITIAL> "*=" { 
     System.out.println(" Multiplicación y asignación "); 
-    return symbol(sym.);
+    return symbol(sym.MULTIPLIACION_Y_ASIGNACION);
 }
 <YYINITIAL> "/" { 
     System.out.println(" Division "); 
-    return symbol(sym.);
+    return symbol(sym.DIVISION);
 }
 <YYINITIAL> "%" { 
     System.out.println(" Módulo "); 
-    return symbol(sym.);
+    return symbol(sym.MODULO);
 }
 <YYINITIAL> "|" { 
     System.out.println(" OR binario "); 
-    return symbol(sym.);
+    return symbol(sym.OR_BINARIO);
 }
 <YYINITIAL> "&" { 
     System.out.println(" AND binario ");
-    return symbol(sym.); 
+    return symbol(sym.AND_BINARIO); 
 }
 <YYINITIAL> "*" { 
     System.out.println(" Multiplicacion "); 
-    return symbol(sym.); 
+    return symbol(sym.MULTIPLICACION); 
 }
 <YYINITIAL> "=" { 
     System.out.println(" Asignación básica "); 
@@ -275,25 +276,27 @@ import java_cup.*;
 }
 <YYINITIAL> "<" { 
     System.out.println(" Menor que "); 
-    return symbol(sym.); 
+    return symbol(sym.MENOR_QUE); 
 }
 <YYINITIAL> ">" { 
     System.out.println(" Mayor que "); 
-    return symbol(sym.); 
+    return symbol(sym.MAYOR_QUE); 
 }
 <YYINITIAL> "!" { 
-    System.out.println(" Negación lógica (NOT) "); return symbol(sym.); 
+    System.out.println(" Negación lógica (NOT) "); 
+    return symbol(sym.NEGACION_LOGICA); 
 }
 <YYINITIAL> "-" { 
     System.out.println(" Resta "); 
-    return symbol(sym.); 
+    return symbol(sym.RESTA); 
 }
 <YYINITIAL> "^" { 
-    System.out.println(" XOR binario "); return symbol(sym.); 
+    System.out.println(" XOR binario "); 
+    return symbol(sym.XOR_BINARIO); 
 }
 <YYINITIAL> "~" { 
     System.out.println(" Complemento a uno "); 
-    return symbol(sym.);
+    return symbol(sym.COMPLEMENTO_A_UNO);
 }
 <YYINITIAL> "+" { 
     System.out.println(" Suma "); 
