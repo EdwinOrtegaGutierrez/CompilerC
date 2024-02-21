@@ -17,7 +17,7 @@ public class Generador {
         
         //**********************ESTE ES PARA EL CUP**********************
         //String[] parametros = {"-parser", "Sintactico", "C:\\Users\\7053\\Documents\\NetBeansProjects\\UEDL_COMPILADORES\\src\\sintactico\\sintactico.cup"};
-        String[] parametros = {"-destdir", "src\\lexico","-parser", "ParserDemo", 
+        String[] parametros = {"-destdir", "src\\sintatico","-parser", "ParserDemo", 
             "-progress", "src\\sintatico\\gramatica.cup"};
         java_cup.Main.main(parametros);   
     }

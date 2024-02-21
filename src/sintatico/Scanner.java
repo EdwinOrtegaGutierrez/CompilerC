@@ -381,7 +381,7 @@ class Scanner implements java_cup.runtime.Scanner {
     StringBuffer string = new StringBuffer();
 
     private Symbol symbol(int type){
-        return new Symbol(type, yyline, yycolumn);|
+        return new Symbol(type, yyline, yycolumn);
     }
 
     private Symbol symbol(int type, Object value){
@@ -1158,13 +1158,11 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 164: break;
           case 79: 
-            { System.out.println("Comentarios unilinea: " + yytext()); 
-    return symbol(sym.UNILINEA);
+            { System.out.println("Comentarios unilinea: " + yytext());
             }
           case 165: break;
           case 80: 
-            { System.out.println("Espacios: " + yytext()); 
-    return symbol(sym.INTS);
+            { System.out.println("Espacios: " + yytext());
             }
           case 166: break;
           case 81: 
@@ -1188,8 +1186,7 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 170: break;
           case 85: 
-            { System.out.println("Comentarios multi: " + yytext()); 
-    return symbol(sym.MULTILINEA);
+            { System.out.println("Comentarios multi: " + yytext());
             }
           case 171: break;
           case 86: 

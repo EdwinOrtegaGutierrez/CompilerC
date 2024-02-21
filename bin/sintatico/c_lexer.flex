@@ -20,7 +20,7 @@ import java_cup.*;
     StringBuffer string = new StringBuffer();
 
     private Symbol symbol(int type){
-        return new Symbol(type, yyline, yycolumn);|
+        return new Symbol(type, yyline, yycolumn);
     }
 
     private Symbol symbol(int type, Object value){
@@ -168,7 +168,7 @@ import java_cup.*;
 
 <YYINITIAL> "+=" { 
     System.out.println(" Suma y asignacion "); 
-    return symbol(sym.);
+    return symbol(sym.SUMA_ASIGNACION);
 }
 <YYINITIAL> "++" { 
     System.out.println(" Incremento "); 
@@ -335,15 +335,15 @@ import java_cup.*;
 [\r\n] { /* Acciones específicas para salto de línea */ }
 <YYINITIAL> "\\/\\*(?:.|[\\r\\n])*?\\*\\/" { 
     System.out.println("Comentarios multi: " + yytext()); 
-    return symbol(sym.MULTILINEA);
+    
 }
 <YYINITIAL> "\\/\\/[^\r\n]*" { 
     System.out.println("Comentarios unilinea: " + yytext()); 
-    return symbol(sym.UNILINEA);
+    
 }
 <YYINITIAL> "[ \\n\\t\\r]+" { 
     System.out.println("Espacios: " + yytext()); 
-    return symbol(sym.INTS);
+    
 }
 <YYINITIAL> "\"(?:[^\"]|\\.)*\"" { 
     System.out.println("Cadenas: " + yytext()); 
