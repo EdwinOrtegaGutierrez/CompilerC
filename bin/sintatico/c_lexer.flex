@@ -168,139 +168,139 @@ import java_cup.runtime.*;
 /* Operadores */ 
 
 "+=" { 
-    System.out.println(" Suma y asignacion "); 
+    System.out.println("Suma y asignacion "); 
     return symbol(sym.SUMA_ASIGNACION);
 }
 "++" { 
-    System.out.println(" Incremento "); 
+    System.out.println("Incremento "); 
     return symbol(sym.INCREMENTO);
 }
 "-=" { 
-    System.out.println(" Resta y asignación "); 
+    System.out.println("Resta y asignación "); 
     return symbol(sym.RESTA_ASIGNACION);
 }
 "/=" { 
-    System.out.println(" División y asignación "); 
+    System.out.println("División y asignación "); 
     return symbol(sym.DIVISION_ASIGNACION);
 }
 "%=" { 
-    System.out.println(" Módulo y asignación "); 
+    System.out.println("Módulo y asignación "); 
     return symbol(sym.MODULO_Y_ASIGNACION);
 }
 "--" { 
-    System.out.println(" Decremento "); 
+    System.out.println("Decremento "); 
     return symbol(sym.DECREMENTO);
 }
 "<=" { 
-    System.out.println(" Menor o igual que "); 
+    System.out.println("Menor o igual que "); 
     return symbol(sym.MENOR_O_IGUAL_QUE);
 }
 ">=" { 
-    System.out.println(" Mayor que o igual que "); 
+    System.out.println("Mayor que o igual que "); 
     return symbol(sym.MAYOR_O_IGUAL_QUE);
 }
 "==" { 
-    System.out.println(" Igual que "); 
+    System.out.println("Igual que "); 
     return symbol(sym.IGUAL_QUE);
 }
 "!=" { 
-    System.out.println(" Diferente que / No igual que "); 
+    System.out.println("Diferente que / No igual que "); 
     return symbol(sym.DIFERENTE_QUE);
 }
 "<=>" { 
-    System.out.println(" Comparación a tres sentidos "); 
+    System.out.println("Comparación a tres sentidos "); 
     return symbol(sym.COMPARACION_TRES_SENTIDOS);
 }
 "&&" { 
-    System.out.println(" Y lógico (AND) "); 
+    System.out.println("Y lógico (AND) "); 
     return symbol(sym.AND);
 }
 "||" { 
-    System.out.println(" O lógico (OR) ");
+    System.out.println("O lógico (OR) ");
     return symbol(sym.OR);
 }
 "<<" { 
-    System.out.println(" Desplazamiento a la izquierda "); 
+    System.out.println("Desplazamiento a la izquierda "); 
     return symbol(sym.DESPLAZAMIENTO_IZQUIERDA);
 }
 "<<=" { 
-    System.out.println(" Asignación con desplazamiento a la izquierda "); 
+    System.out.println("Asignación con desplazamiento a la izquierda "); 
     return symbol(sym.ASIGNACION_DESPLAZAMIENTO_IZQUIERDA);
 }
 ">>" { 
-    System.out.println(" Desplazamiento a la derecha "); 
+    System.out.println("Desplazamiento a la derecha "); 
     return symbol(sym.DESPLAZAMIENTO_DERECHA);
 }
 ">>=" { 
-    System.out.println(" Asignación con desplazamiento a la derecha "); 
+    System.out.println("Asignación con desplazamiento a la derecha "); 
     return symbol(sym.ASIGNACION_DESPLAZAMIENTO_DERECHA);
 }
 "&=" { 
-    System.out.println(" Asignación con AND binario "); 
+    System.out.println("Asignación con AND binario "); 
     return symbol(sym.ASIGNACION_AND);
 }
 "^=" { 
-    System.out.println(" Asignación con XOR binario "); 
+    System.out.println("Asignación con XOR binario "); 
     return symbol(sym.ASIGNACION_XOR);
 }
 "()" { 
-    System.out.println(" Llamada a función "); 
+    System.out.println("Llamada a función "); 
     return symbol(sym.LLAMADA_A_FUNCION);
 }
 "*=" { 
-    System.out.println(" Multiplicación y asignación "); 
+    System.out.println("Multiplicación y asignación "); 
     return symbol(sym.MULTIPLIACION_Y_ASIGNACION);
 }
 "/" { 
-    System.out.println(" Division "); 
+    System.out.println("Division "); 
     return symbol(sym.DIVISION);
 }
 "%" { 
-    System.out.println(" Módulo "); 
+    System.out.println("Módulo "); 
     return symbol(sym.MODULO);
 }
 "|" { 
-    System.out.println(" OR binario "); 
+    System.out.println("OR binario "); 
     return symbol(sym.OR_BINARIO);
 }
 "&" { 
-    System.out.println(" AND binario ");
+    System.out.println("AND binario ");
     return symbol(sym.AND_BINARIO); 
 }
 "*" { 
-    System.out.println(" Multiplicacion "); 
+    System.out.println("Multiplicacion "); 
     return symbol(sym.MULTIPLICACION); 
 }
 "=" { 
-    System.out.println(" Asignación básica "); 
+    System.out.println("Asignación básica "); 
     return symbol(sym.IGUAL);
 }
 "<" { 
-    System.out.println(" Menor que "); 
+    System.out.println("Menor que "); 
     return symbol(sym.MENOR_QUE); 
 }
 ">" { 
-    System.out.println(" Mayor que "); 
+    System.out.println("Mayor que "); 
     return symbol(sym.MAYOR_QUE); 
 }
 "!" { 
-    System.out.println(" Negación lógica (NOT) "); 
+    System.out.println("Negación lógica (NOT) "); 
     return symbol(sym.NEGACION_LOGICA); 
 }
 "-" { 
-    System.out.println(" Resta "); 
+    System.out.println("Resta "); 
     return symbol(sym.RESTA); 
 }
 "^" { 
-    System.out.println(" XOR binario "); 
+    System.out.println("XOR binario "); 
     return symbol(sym.XOR_BINARIO); 
 }
 "~" { 
-    System.out.println(" Complemento a uno "); 
+    System.out.println("Complemento a uno "); 
     return symbol(sym.COMPLEMENTO_A_UNO);
 }
 "+" { 
-    System.out.println(" Suma "); 
+    System.out.println("Suma "); 
     return symbol(sym.SUMA);
 }
 ";" { 
@@ -325,7 +325,7 @@ import java_cup.runtime.*;
 }
 
 /* FUNCIONES */
-<YYINITIAL> "main()" { 
+<YYINITIAL> "main" { 
     System.out.println("Metodo main"); 
     return symbol(sym.MAIN);
 }
@@ -336,41 +336,42 @@ import java_cup.runtime.*;
 }
 
 /* EXPRESIONES */
-[\r\n] { /* Acciones específicas para salto de línea */ }
+[ \n\t\r] { /* Acciones específicas para salto de línea */ }
 
-<YYINITIAL> "\\/\\*(?:.|[\\r\\n])*?\\*\\/" { /*Comentarios multi */ }
+(\/\*(\s*|.*?)*\*\/)|(\/\/.*) { System.out.println("Comentarios multilinea y unilinea"); }
 
-<YYINITIAL> "\\/\\/[^\r\n]*" { /* Comentarios unilinea */ }
-
-<YYINITIAL> "[ \\n\\t\\r]+" { /*Espacios*/ }
-
-"\"(?:[^\"]|\\.)*\"" { 
-    System.out.println("Cadenas: " + yytext()); 
+("\"".*?"\"") { 
+    System.out.println("Lectura de cadenas: " + yytext()); 
     return symbol(sym.STRINGS);
 }
-"\'(?:[^\']|\\.)*\'" { 
-    System.out.println("Caracteres: " + yytext()); 
-    return symbol(sym.CHARS);
-}
-"^-?\\d+$" { 
-    System.out.println("Enteros: " + yytext()); 
-    return symbol(sym.INTS);
-}
-"^-?\\d*\\.\\d+$" { 
-    System.out.println("Decimales: " + yytext()); 
-    return symbol(sym.FLOATS);
-}
-"(true|false)" { 
-    System.out.println("Boleanos: " + yytext()); 
-    return symbol(sym.BOOLS);
-}
-"[a-zA-Z_][a-zA-Z0-9_]*" { 
-    System.out.println("Identificadores: " + yytext()); 
-    return symbol(sym.VARS);
-}
-"<([^>]*)>" {
+
+(<)[a-z]*.h(>) {
     System.out.println("Lectura de libreria");
     return symbol(sym.LIB);
 }
+
+("\'".*?"\'") { 
+    System.out.println("Lectura de caracteres: " + yytext()); 
+    return symbol(sym.CHARS);
+}
+
+[0-9]* { 
+    System.out.println("Lectura de enteros: " + yytext()); 
+    return symbol(sym.INTS);
+}
+(true|false) { 
+    System.out.println("Lectura de boleanos: " + yytext()); 
+    return symbol(sym.BOOLS);
+}
+/*
+"^-?\\d*\\.\\d+$" { 
+    System.out.println("Lectura de decimales: " + yytext()); 
+    return symbol(sym.FLOATS);
+}
+[a-zA-Z_][a-zA-Z0-9_]* { 
+    System.out.println("Identificadores: " + yytext()); 
+    return symbol(sym.VARS);
+}
+ */
 
 . { System.out.println("Simbolo no reconocido: " + yytext()); }
