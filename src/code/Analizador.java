@@ -31,7 +31,7 @@ public class Analizador {
         
 
         try {
-            System.out.println(s.parse());
+            System.out.println("\nCantidad de errores: " + s.parse());
             System.out.println("Analisis realizado correctamente");
         } catch (Exception ex) {
             Symbol sym = s.scan();
