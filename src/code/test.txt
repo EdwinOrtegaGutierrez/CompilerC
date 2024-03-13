@@ -2,5 +2,10 @@
 int main() {
    // Comentario
    printf("Hello, World!");
+
+   printf("Mi nombre es edwin");
+
+   printf("HOLAAAAAAA");
+
    return 0;
 }

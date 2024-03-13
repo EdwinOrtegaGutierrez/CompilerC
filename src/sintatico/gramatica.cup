@@ -26,7 +26,7 @@ terminal DECREMENTO, DIVISION_ASIGNACION,MODULO_Y_ASIGNACION, MENOR_O_IGUAL_QUE,
 
 terminal IGUAL, ENTEROS, PUNTO_COMA;
 /* SIMBOLOS NO TERMINALES */
-non terminal declarations, dec_lib, dec_main, data_main, PRINTFS, RETURNS;
+non terminal declarations, dec_lib, dec_main, data_main, PRINTF_LIST, PRINTFS, RETURNS;
 
 /* REGLAS GRAMATICALES */
 start with declarations;
@@ -37,7 +37,9 @@ dec_lib::= INCLUDE LIB;
 
 dec_main::= INT MAIN LLAMADA_A_FUNCION BRACKET_LEFT data_main RETURNS BRACKET_RIGHT;
 
-data_main::= PRINTFS | IFS | SWITCH;
+data_main::= PRINTF_LIST;
+
+PRINTF_LIST::= PRINTF_LIST PRINTFS | PRINTFS;
 
 PRINTFS::= PRINTF PARENTHESES_LEFT STRINGS PARENTHESES_RIGHT PUNTO_COMA;
 

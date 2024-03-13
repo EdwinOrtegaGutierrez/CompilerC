@@ -743,93 +743,88 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 84: break;
           case 3: 
-            { System.out.println("Suma "); 
+            { /*Suma */
     return symbol(sym.SUMA, yytext());
             }
           case 85: break;
           case 4: 
-            { System.out.println("Asignación básica "); 
+            { /*Asignación básica */
     return symbol(sym.IGUAL, yytext());
             }
           case 86: break;
           case 5: 
-            { System.out.println("Resta "); 
+            { /*Resta */
     return symbol(sym.RESTA, yytext());
             }
           case 87: break;
           case 6: 
-            { System.out.println("Division "); 
+            { /*Division */
     return symbol(sym.DIVISION, yytext());
             }
           case 88: break;
           case 7: 
-            { System.out.println("Módulo "); 
+            { /*Módulo */
     return symbol(sym.MODULO, yytext());
             }
           case 89: break;
           case 8: 
-            { System.out.println("Menor que "); 
+            { /*Menor que */
     return symbol(sym.MENOR_QUE, yytext());
             }
           case 90: break;
           case 9: 
-            { System.out.println("Mayor que "); 
+            { /*Mayor que */
     return symbol(sym.MAYOR_QUE, yytext());
             }
           case 91: break;
           case 10: 
-            { System.out.println("Negación lógica (NOT) "); 
+            { /*Negación lógica (NOT) */
     return symbol(sym.NEGACION_LOGICA, yytext());
             }
           case 92: break;
           case 11: 
-            { System.out.println("AND binario ");
+            { /*AND binario*/
     return symbol(sym.AND_BINARIO, yytext());
             }
           case 93: break;
           case 12: 
-            { System.out.println("OR binario "); 
+            { /*OR binario */
     return symbol(sym.OR_BINARIO, yytext());
             }
           case 94: break;
           case 13: 
-            { System.out.println("XOR binario "); 
+            { /*XOR binario */
     return symbol(sym.XOR_BINARIO, yytext());
             }
           case 95: break;
           case 14: 
-            { System.out.println(yytext()); 
-    return symbol(sym.PARENTHESES_LEFT, yytext());
+            { return symbol(sym.PARENTHESES_LEFT, yytext());
             }
           case 96: break;
           case 15: 
-            { System.out.println(yytext()); 
-    return symbol(sym.PARENTHESES_RIGHT, yytext());
+            { return symbol(sym.PARENTHESES_RIGHT, yytext());
             }
           case 97: break;
           case 16: 
-            { System.out.println("Multiplicacion "); 
+            { /*Multiplicacion */
     return symbol(sym.MULTIPLICACION, yytext());
             }
           case 98: break;
           case 17: 
-            { System.out.println("Complemento a uno "); 
+            { /*Complemento a uno */
     return symbol(sym.COMPLEMENTO_A_UNO, yytext());
             }
           case 99: break;
           case 18: 
-            { System.out.println(yytext()); 
-    return symbol(sym.PUNTO_COMA, yytext());
+            { return symbol(sym.PUNTO_COMA, yytext());
             }
           case 100: break;
           case 19: 
-            { System.out.println(yytext()); 
-    return symbol(sym.BRACKET_LEFT, yytext());
+            { return symbol(sym.BRACKET_LEFT, yytext());
             }
           case 101: break;
           case 20: 
-            { System.out.println(yytext()); 
-    return symbol(sym.BRACKET_RIGHT, yytext());
+            { return symbol(sym.BRACKET_RIGHT, yytext());
             }
           case 102: break;
           case 21: 
@@ -837,42 +832,42 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 103: break;
           case 22: 
-            { System.out.println("Especifica una condicion"); 
+            { /*Especifica una condicion*/
     return symbol(sym.IF, yytext());
             }
           case 104: break;
           case 23: 
-            { System.out.println(" Especifica el inicio de un bucle do-while "); 
+            { /*Especifica el inicio de un bucle do-while */
     return symbol(sym.DO, yytext());
             }
           case 105: break;
           case 24: 
-            { System.out.println("Incremento "); 
+            { /*Incremento */
     return symbol(sym.INCREMENTO, yytext());
             }
           case 106: break;
           case 25: 
-            { System.out.println("Suma y asignacion "); 
+            { /*Suma y asignacion */
     return symbol(sym.SUMA_ASIGNACION, yytext());
             }
           case 107: break;
           case 26: 
-            { System.out.println("Igual que "); 
+            { /*Igual que */
     return symbol(sym.IGUAL_QUE, yytext());
             }
           case 108: break;
           case 27: 
-            { System.out.println("Resta y asignación "); 
+            { /*Resta y asignación */
     return symbol(sym.RESTA_ASIGNACION, yytext());
             }
           case 109: break;
           case 28: 
-            { System.out.println("Decremento "); 
+            { /*Decremento */
     return symbol(sym.DECREMENTO, yytext());
             }
           case 110: break;
           case 29: 
-            { System.out.println("División y asignación "); 
+            { /*División y asignación */
     return symbol(sym.DIVISION_ASIGNACION, yytext());
             }
           case 111: break;
@@ -881,62 +876,61 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 112: break;
           case 31: 
-            { System.out.println("Módulo y asignación "); 
+            { /*Módulo y asignación */
     return symbol(sym.MODULO_Y_ASIGNACION, yytext());
             }
           case 113: break;
           case 32: 
-            { System.out.println("Menor o igual que "); 
+            { /*Menor o igual que */
     return symbol(sym.MENOR_O_IGUAL_QUE, yytext());
             }
           case 114: break;
           case 33: 
-            { System.out.println("Desplazamiento a la izquierda "); 
+            { /*Desplazamiento a la izquierda */
     return symbol(sym.DESPLAZAMIENTO_IZQUIERDA, yytext());
             }
           case 115: break;
           case 34: 
-            { System.out.println("Mayor que o igual que "); 
+            { /*Mayor que o igual que */
     return symbol(sym.MAYOR_O_IGUAL_QUE, yytext());
             }
           case 116: break;
           case 35: 
-            { System.out.println("Desplazamiento a la derecha "); 
+            { /*Desplazamiento a la derecha */
     return symbol(sym.DESPLAZAMIENTO_DERECHA, yytext());
             }
           case 117: break;
           case 36: 
-            { System.out.println("Diferente que / No igual que "); 
+            { /*Diferente que / No igual que */
     return symbol(sym.DIFERENTE_QUE, yytext());
             }
           case 118: break;
           case 37: 
-            { System.out.println("Asignación con AND binario "); 
+            { /*Asignación con AND binario */
     return symbol(sym.ASIGNACION_AND, yytext());
             }
           case 119: break;
           case 38: 
-            { System.out.println("Y lógico (AND) "); 
+            { /*Y lógico (AND) */
     return symbol(sym.AND, yytext());
             }
           case 120: break;
           case 39: 
-            { System.out.println("O lógico (OR) ");
+            { /*O lógico (OR)*/
     return symbol(sym.OR, yytext());
             }
           case 121: break;
           case 40: 
-            { System.out.println("Asignación con XOR binario "); 
+            { /*Asignación con XOR binario */
     return symbol(sym.ASIGNACION_XOR, yytext());
             }
           case 122: break;
           case 41: 
-            { System.out.println(yytext()); 
-    return symbol(sym.LLAMADA_A_FUNCION, yytext());
+            { return symbol(sym.LLAMADA_A_FUNCION, yytext());
             }
           case 123: break;
           case 42: 
-            { System.out.println("Multiplicación y asignación "); 
+            { /*Multiplicación y asignación */
     return symbol(sym.MULTIPLIACION_Y_ASIGNACION, yytext());
             }
           case 124: break;
@@ -951,32 +945,31 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 126: break;
           case 45: 
-            { System.out.println(yytext()); 
-    return symbol(sym.INT, yytext());
+            { return symbol(sym.INT, yytext());
             }
           case 127: break;
           case 46: 
-            { System.out.println(" Especifica un bucle for "); 
+            { /*Especifica un bucle for */
     return symbol(sym.FOR, yytext());
             }
           case 128: break;
           case 47: 
-            { System.out.println("Comparación a tres sentidos "); 
+            { /*Comparación a tres sentidos */
     return symbol(sym.COMPARACION_TRES_SENTIDOS, yytext());
             }
           case 129: break;
           case 48: 
-            { System.out.println("Asignación con desplazamiento a la izquierda "); 
+            { /*Asignación con desplazamiento a la izquierda */
     return symbol(sym.ASIGNACION_DESPLAZAMIENTO_IZQUIERDA, yytext());
             }
           case 130: break;
           case 49: 
-            { System.out.println("Asignación con desplazamiento a la derecha "); 
+            { /*Asignación con desplazamiento a la derecha */
     return symbol(sym.ASIGNACION_DESPLAZAMIENTO_DERECHA, yytext());
             }
           case 131: break;
           case 50: 
-            { System.out.println(" Declara una variable local que se almacena en el stack "); 
+            { /* Declara una variable local que se almacena en el stack */
     return symbol(sym.AUTO, yytext());
             }
           case 132: break;
@@ -986,158 +979,153 @@ class Scanner implements java_cup.runtime.Scanner {
             }
           case 133: break;
           case 52: 
-            { System.out.println(" Declara un conjunto de constantes enteras numeradas "); 
+            { /*Declara un conjunto de constantes enteras numeradas */
     return symbol(sym.ENUM, yytext());
             }
           case 134: break;
           case 53: 
-            { System.out.println(" Especifica la parte else de una instruccion if "); 
+            { /*Especifica la parte else de una instruccion if */
     return symbol(sym.ELSE, yytext());
             }
           case 135: break;
           case 54: 
-            { System.out.println(" Especifica un caso en una sentencia switch "); 
+            { /* Especifica un caso en una sentencia switch */
     return symbol(sym.CASE, yytext());
             }
           case 136: break;
           case 55: 
-            { System.out.println(" Declara una variable de tipo caracter "); 
+            { /* Declara una variable de tipo caracter */
     return symbol(sym.CHAR, yytext());
             }
           case 137: break;
           case 56: 
-            { System.out.println("Declara una variable de tipo entero largo"); 
+            { /*Declara una variable de tipo entero largo*/
     return symbol(sym.LOGIN, yytext());
             }
           case 138: break;
           case 57: 
-            { System.out.println(yytext()); 
-    return symbol(sym.MAIN, yytext());
+            { return symbol(sym.MAIN, yytext());
             }
           case 139: break;
           case 58: 
-            { System.out.println(" Salta a una etiqueta especifica "); 
+            { /*Salta a una etiqueta especifica */
     return symbol(sym.GOTO, yytext());
             }
           case 140: break;
           case 59: 
-            { System.out.println("Funcion sin valor"); 
+            { /*Funcion sin valor*/
     return symbol(sym.VOID, yytext());
             }
           case 141: break;
           case 60: 
-            { System.out.println(yytext());
-    return symbol(sym.LIB, yytext());
+            { return symbol(sym.LIB, yytext());
             }
           case 142: break;
           case 61: 
-            { System.out.println("Declara una union"); 
+            { /*Declara una union*/
     return symbol(sym.UNION, yytext());
             }
           case 143: break;
           case 62: 
-            { System.out.println(" Termina la ejecucion del bucle o la sentencia switch actual "); 
+            { /* Termina la ejecucion del bucle o la sentencia switch actual */
     return symbol(sym.BREAK, yytext());
             }
           case 144: break;
           case 63: 
-            { System.out.println(" Declara una variable que no puede ser modificada "); 
+            { /* Declara una variable que no puede ser modificada */
     return symbol(sym.CONST, yytext());
             }
           case 145: break;
           case 64: 
-            { System.out.println("Declara una variable de tipo entero corto"); 
+            { /*Declara una variable de tipo entero corto*/
     return symbol(sym.SHORT, yytext());
             }
           case 146: break;
           case 65: 
-            { System.out.println(" Declara una variable de tipo coma flotante "); 
+            { /*Declara una variable de tipo coma flotante */
     return symbol(sym.FLOAT, yytext());
             }
           case 147: break;
           case 66: 
-            { System.out.println("Especifica un bucle while"); 
+            { /*Especifica un bucle while*/
     return symbol(sym.WHILE, yytext());
             }
           case 148: break;
           case 67: 
-            { System.out.println(yytext()); 
-    return symbol(sym.RETURN, yytext());
+            { return symbol(sym.RETURN, yytext());
             }
           case 149: break;
           case 68: 
-            { System.out.println(" Declara una variable global que esta definida en otro archivo "); 
+            { /*Declara una variable global que esta definida en otro archivo */
     return symbol(sym.EXTERN, yytext());
             }
           case 150: break;
           case 69: 
-            { System.out.println("Declara una variable local que se mantiene en la memoria despues de que la funcion termine"); 
+            { /*Declara una variable local que se mantiene en la memoria despues de que la funcion termine*/
     return symbol(sym.STATIC, yytext());
             }
           case 151: break;
           case 70: 
-            { System.out.println("Declara una estructura"); 
+            { /*Declara una estructura*/
     return symbol(sym.STRUCT, yytext());
             }
           case 152: break;
           case 71: 
-            { System.out.println("Declara una variable de tipo entero con signo"); 
+            { /*Declara una variable de tipo entero con signo*/
     return symbol(sym.SIGNED, yytext());
             }
           case 153: break;
           case 72: 
-            { System.out.println("Devuelve el tamano de un tipo de dato"); 
+            { /*Devuelve el tamano de un tipo de dato*/
     return symbol(sym.SIZEOF, yytext());
             }
           case 154: break;
           case 73: 
-            { System.out.println("Especifica una sentencia switch"); 
+            { /*Especifica una sentencia switch*/
     return symbol(sym.SWITCH, yytext());
             }
           case 155: break;
           case 74: 
-            { System.out.println(" Declara una variable de tipo doble precision "); 
+            { /*Declara una variable de tipo doble precision */
     return symbol(sym.DOUBLE, yytext());
             }
           case 156: break;
           case 75: 
-            { System.out.println(yytext()); 
-    return symbol(sym.PRINTF, yytext());
+            { return symbol(sym.PRINTF, yytext());
             }
           case 157: break;
           case 76: 
-            { System.out.println("Declara un nuevo tipo de dato"); 
+            { /*Declara un nuevo tipo de dato*/
     return symbol(sym.TYPEDEF, yytext());
             }
           case 158: break;
           case 77: 
-            { System.out.println(" Especifica un caso por defecto en una sentencia switch "); 
+            { /*Especifica un caso por defecto en una sentencia switch */
     return symbol(sym.DEFAULT, yytext());
             }
           case 159: break;
           case 78: 
-            { System.out.println("Declara una variable de tipo entero sin signo"); 
+            { /*Declara una variable de tipo entero sin signo*/
     return symbol(sym.UNSIGNED, yytext());
             }
           case 160: break;
           case 79: 
-            { System.out.println("Declara una variable que se almacena en el registro"); 
+            { /*Declara una variable que se almacena en el registro*/
     return symbol(sym.REGISTER, yytext());
             }
           case 161: break;
           case 80: 
-            { System.out.println(" Salta a la siguiente iteracion del bucle actual "); 
+            { /* Salta a la siguiente iteracion del bucle actual */
     return symbol(sym.CONTINUE, yytext());
             }
           case 162: break;
           case 81: 
-            { System.out.println("Declara una variable que puede ser modificada por hardware"); 
+            { /*Declara una variable que puede ser modificada por hardware*/
     return symbol(sym.VOLATILE, yytext());
             }
           case 163: break;
           case 82: 
-            { System.out.println(yytext());
-    return symbol(sym.INCLUDE, yytext());
+            { return symbol(sym.INCLUDE, yytext());
             }
           case 164: break;
           default:
