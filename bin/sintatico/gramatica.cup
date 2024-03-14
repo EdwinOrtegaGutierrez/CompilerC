@@ -26,7 +26,7 @@ terminal DECREMENTO, DIVISION_ASIGNACION,MODULO_Y_ASIGNACION, MENOR_O_IGUAL_QUE,
 
 terminal IGUAL, ENTEROS, PUNTO_COMA;
 /* SIMBOLOS NO TERMINALES */
-non terminal declarations, dec_lib, dec_main, data_main, PRINTFS, RETURNS;
+non terminal declarations, dec_lib, dec_main, data_main, PRINTFS, RETURNS, declarations_vars, tipo_dato, vars, data_main_vars;
 
 /* REGLAS GRAMATICALES */
 start with declarations;
@@ -37,13 +37,13 @@ dec_lib::= INCLUDE LIB;
 
 dec_main::= INT MAIN LLAMADA_A_FUNCION BRACKET_LEFT data_main RETURNS BRACKET_RIGHT;
 
-data_main::= PRINTFS | IFS | SWITCH | DECLARATIONS_VARS data_main_vars;
+data_main::= PRINTFS | IFS | SWITCH | declarations_vars data_main_vars;
 
-DECLARATIONS_VARS::= TIPO_DATO VARS PUNTO_COMA;
+declarations_vars::= tipo_dato vars PUNTO_COMA;
 
-TIPO_DATO::= INT | FLOAT | CHAR; 
+tipo_dato::= INT | FLOAT | CHAR; 
 
-VARS::= ID | ID COMA VARS;
+vars::= ID | ID COMA VARS;
 
 data_main_vars::= ASIGNACION_VARS PUNTO_COMA data_main_vars | ε;
 
