@@ -16,8 +16,10 @@ public class Analizador {
             System.out.println("\n\u001B[42mCantidad de errores: " + s.parse() + ", Análisis realizado correctamente  \u001B[0m");
         } catch (Exception ex) {
             Symbol sym = s.scan();
-            System.out.println("Error de sintaxis. Linea: " + (sym.right + 1) +" Columna: " + (sym.left + 1) + ", Texto: \"" + sym.value + "\"");
+            System.out.print("\u001B[31m");
+            System.out.println("Error de sintaxis. Línea: " + (sym.right + 1) + ", Columna: " + (sym.left + 1) + ", Texto: \"" + sym.value + "\"");
             System.out.println(ex.getMessage());
+            System.out.print("\u001B[0m"); // Restablecer el color a predeterminado
         }
         
     }

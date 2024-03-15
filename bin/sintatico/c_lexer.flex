@@ -27,6 +27,8 @@ import java_cup.runtime.*;
 
 %%
 
+long
+
 /* keywords */
 "auto" { 
     /* Declara una variable local que se almacena en el stack */
@@ -97,7 +99,7 @@ import java_cup.runtime.*;
 }
 "long" { 
     /*Declara una variable de tipo entero largo*/
-    return symbol(sym.LOGIN, yytext());
+    return symbol(sym.LONG, yytext());
 }
 "register" { 
     /*Declara una variable que se almacena en el registro*/
@@ -326,7 +328,7 @@ import java_cup.runtime.*;
 (\/\*(\s*|.*?)*\*\/)|(\/\/.*) { /* Comentarios multilinea y unilinea */ }
 
 ("\"".*?"\"") { 
-    System.out.println(yytext()); 
+    /* STRINGS */
     return symbol(sym.STRINGS, yytext());
 }
 
@@ -335,27 +337,22 @@ import java_cup.runtime.*;
 }
 
 ("\'".*?"\'") { 
-    System.out.println("Lectura de caracteres: " + yytext()); 
     return symbol(sym.CHARS, yytext());
 }
 
 [0-9]* { 
-    System.out.println(yytext()); 
     return symbol(sym.INTS, yytext());
 }
 (true|false) { 
-    System.out.println("Lectura de boleanos: " + yytext()); 
     return symbol(sym.BOOLS, yytext());
 }
-/*
-"^-?\\d*\\.\\d+$" { 
-    System.out.println("Lectura de decimales: " + yytext()); 
-    return symbol(sym.FLOATS);
+
+[0-9]+.[0-9]+ { 
+    return symbol(sym.FLOATS, yytext());
 }
-[a-zA-Z_][a-zA-Z0-9_]* { 
-    System.out.println("Identificadores: " + yytext()); 
-    return symbol(sym.VARS);
+
+[a-zA-Z0-9]+ {
+    return symbol(sym.VAR_NAME, yytext());
 }
- */
 
 . { System.out.println("Simbolo no reconocido: " + yytext()); }
