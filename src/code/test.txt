@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
    // Comentario
-   printf("Hello, World!");
+   //printf("Hello, World!");
 
    // Create variables
    int myNum = 15;         
