@@ -1,10 +1,6 @@
 # TODO 
-## Expresiones
 
-1. Funciones con y sin parametros
 
---- Edwin 
-3. declaración de switch, case, break y default con las diferentes forma de combinaciones. --- MEDIANO
 
 # Material
 <ul>

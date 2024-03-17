@@ -300,6 +300,9 @@ long
 ";" { 
     return symbol(sym.PUNTO_COMA, yytext());
 }
+":" {
+    return symbol(sym.DOS_PUNTOS, yytext());
+}
 "{" { 
     return symbol(sym.BRACKET_LEFT, yytext());
 }

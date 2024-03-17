@@ -1,7 +1,16 @@
 #include <stdio.h>
+
+int suma(){
+   return 0;
+}
+
+int num(int a){
+   return a;
+}
+
 int main() {
    // Comentario
-   //printf("Hello, World!");
+   printf("Hello, World!");
 
    // Create variables
    int myNum = 15;         
@@ -9,21 +18,45 @@ int main() {
    char myLetter = 'D';    
    int anotherNum; 
 
-   /* if () { 
+   if () { 
 
-   } */
+   }
 
-   /*for (; ;) {
+   for (; ;) {
 
-   }*/
+   }
 
-   // while () {
+   while () {
 
-   // }
+   }
 
-   // do {
+   do {
 
-   // } while ()
+   } while ()
+
+
+   switch (operation)
+   {
+      case '+':
+         printf("Suma");
+         break;
+
+      case '-':
+         printf("Resta");
+         break;
+
+      case '*':
+         printf("Multiplicacion");
+         break;
+
+      case '/':
+         printf("Division");
+         break;
+
+      default:
+         printf("Error!");
+   }
+
 
    return 0;
 }
