@@ -18,21 +18,27 @@ int main() {
    char myLetter = 'D';    
    int anotherNum; 
 
-   if () { 
-
+   if (myNum > 5) { 
+      printf("Hello, World!");
+   } 
+   
+   else if (myNum != 20) {
+      printf("Hello, Universe!");
+   } else {
+      printf("Hello, Multi Universe!");
    }
 
-   for (; ;) {
-
+   for (int i = 0; myNum > 5 ; i++) {
+      printf("Hello, World!");
    }
 
-   while () {
-
+   while (myNum > 5) {
+      printf("Hello, World!");
    }
 
    do {
-
-   } while ()
+      printf("Hello, World!");
+   } while (myNum > 5)
 
 
    switch (operation)
