@@ -241,6 +241,9 @@ long
 "()" { 
     return symbol(sym.LLAMADA_A_FUNCION, yytext());
 }
+"[]" {
+    return symbol(sym.LIST, yytext());
+}
 "*=" { 
     /*Multiplicación y asignación */
     return symbol(sym.MULTIPLIACION_Y_ASIGNACION, yytext());
@@ -302,6 +305,9 @@ long
 }
 ":" {
     return symbol(sym.DOS_PUNTOS, yytext());
+}
+"," {
+    return symbol(sym.COMA, yytext());
 }
 "{" { 
     return symbol(sym.BRACKET_LEFT, yytext());
