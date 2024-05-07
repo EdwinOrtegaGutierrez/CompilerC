@@ -1,29 +1,28 @@
-// Bubble sort in C
 #include <stdio.h>
 
-// perform the bubble sort
 void bubbleSort(int array[], int size) {
     int newSize = size - 1;
-    // loop to access each array element
-    for (int step = 0; step < newSize; ++step) {
-        // loop to compare array elements
-        for (int i = 0; i < size - step - 1; ++i) {    
-            // compare two adjacent elements
-            // change > to < to sort in descending order
-            if (array[i] > array[i + 1]) {
-                // swapping occurs if elements
-                // are not in the intended order
+    for (int step = 0; step < newSize; step++) {
+        int steps = step - 1;
+        int sizes = size - steps;
+        for (int i = 0; i < sizes; i++) {    
+            int first = array[i];
+            int position = i + 1;
+            int second = array[position];
+            if (first > second) {
                 int temp = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = temp;
+                int newPosition = i + 1;
+
+                array[i] = array[newPosition];
+                array[newPosition] = temp;
             }
         }
+        
     }
 }
 
-// print array
 void printArray(int array[], int size) {
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
         printf("%d  ", array[i]);
     }
     printf("\n");
@@ -36,4 +35,5 @@ int main() {
     bubbleSort(data, size);
     printf("Sorted Array in Ascending Order:\n");
     printArray(data, size);
+    return 0;
 }

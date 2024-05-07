@@ -321,6 +321,12 @@ long
 ")" { 
     return symbol(sym.PARENTHESES_RIGHT, yytext());
 }
+"[" {
+    return symbol(sym.LIST_LEFT, yytext());
+}
+"]" {
+    return symbol(sym.LIST_RIGHT, yytext());
+}
 
 /* FUNCIONES */
 "main" { 

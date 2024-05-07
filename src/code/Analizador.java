@@ -20,7 +20,7 @@ public class Analizador {
         } catch (Exception ex) {
             Symbol sym = s.scan();
             System.out.print("\u001B[31m");
-            System.out.println("Error de sintaxis. Línea: " + (sym.right + 1) + ", Columna: " + (sym.left + 1) + ", Texto: \"" + sym.value + "\"");
+            System.out.println("Error de sintaxis. Línea: " + (sym.right + 2) + ", Columna: " + (sym.left + 1) + ", Error: \"" + sym.value + "\"");
             System.out.println(ex.getMessage());
             System.out.print("\u001B[0m"); // Restablecer el color a predeterminado
         }
