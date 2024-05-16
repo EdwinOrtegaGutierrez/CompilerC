@@ -9,8 +9,8 @@ import java.io.Reader;
 public class Analizador {
     public static void main(String[] args) throws Exception {
         String fileName = "bubble.c";
-        //String fileName = "test.txt";
-        String dir = "C:\\Users\\edwin\\OneDrive\\Escritorio\\CompilerC\\src\\code\\"+fileName;
+        // String fileName = "test.txt";
+    String dir = "C:\\repos\\CompilerC\\src\\code\\"+fileName;
         Reader lector = new BufferedReader(new FileReader(dir));
         CompilerC s = new CompilerC(new Scanner(lector));
         
