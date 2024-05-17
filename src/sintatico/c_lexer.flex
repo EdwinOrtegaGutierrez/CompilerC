@@ -285,6 +285,10 @@ long
     /*Resta */
     return symbol(sym.RESTA, yytext()); 
 }
+"," { 
+    /*Coma */
+    return symbol(sym.COMA, yytext()); 
+}
 "^" { 
     /*XOR binario */
     return symbol(sym.XOR_BINARIO, yytext()); 
@@ -323,6 +327,9 @@ long
 
 "printf" {  
     return symbol(sym.PRINTF, yytext());
+}
+"scanf" {  
+    return symbol(sym.SCANF, yytext());
 }
 
 /* EXPRESIONES */

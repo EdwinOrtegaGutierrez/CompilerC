@@ -11,7 +11,7 @@ import java_cup.sym;
 public class App {
     public static void main(String[] args) throws IOException {
         try {
-            Reader lector = new BufferedReader(new FileReader("C:\\Users\\edwin\\OneDrive\\Escritorio\\CompilerC\\src\\lexico\\test.txt"));
+            Reader lector = new BufferedReader(new FileReader("C:\\Users\\edson\\OneDrive\\Documentos\\CompilerC-1\\src\\lexico\\test.txt"));
             Scanner lexico = new Scanner(lector);
 
             while (true) {
